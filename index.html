@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewpoint" content="with= device-width, initail- scale=1.0">
+    <meta charset="UTF-8">
+    <title>Steven's Garden Services</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/WhatsApp Image 2021-07-27 at 21.37.19.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Services.html">SERVICES</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+
+  <div class="text-box">
+      <h1>Welcome to Steven Garden Services</h1>
+      <p>The future of Garden Beauty</p>
+      <a href="About.html" class="link1-information"> See About us</a>
+  </div>
+    </section>
+
+  <! ---------------Services--------------->
+    <section class="Services">
+        <h1>Services We Offer</h1>
+        <p>Maintenance, Landscaping, Wits Removal</p>
+
+        <div class="row">
+            <div class="services-col">
+                <h3>Maintenance</h3>
+                <p>
+                    Please refer to services page for more information on maintenance
+                </p>
+            </div>
+            <div class="services-col">
+                <h3>Landscaping</h3>
+                <p>
+                    Please refer to services page for more information on landscaping
+                </p>
+            </div>
+            <div class="services-col">
+                <h3>Weeds Removal</h3>
+                <p>
+                    Please refer to services page for more information on wits removal
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!------------------ services pictures------------------->
+    <section class="services-pictures">
+        <h1>Take a look on the Pictures below for the Services offered </h1>
+        <p>Steven garden Services</p>
+        <div class="row">
+            <div class="pictures-col">
+                <img class="picture1" src="Image/49278871_f3b289102d_z.jpg">
+                <h3>Maintenance</h3>
+
+            </div>
+            <div class="pictures-col">
+                <img class="picture2" src="Image/WhatsApp Image 2021-07-20 at 11.40.03 (1).jpeg">
+                <h3>Landscaping</h3>
+
+            </div>
+            <div class="pictures-col">
+                <img class="picture3" src="Image/shutterstock_1148320814-Flower-700x700.jpg">
+                <h3>Weeds Removal</h3>
+
+            </div>
+        </div>
+    </section>
+
+    <!----------------- Call Us section---------------->
+    <section class="call-us">
+        <h1>Contact Us If Interested For Any Of Our Services</h1>
+        <a href="Contact.html" class="link1-information">Contact Us</a>
+    </section>
+
+    <!----------------- Footer---------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> We strive for excellence</p>
+        <div class="icons">
+            <ul>
+                <li><a href="https://www.facebook.com/StevenGardenServices" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+
+            </ul>
+        </div>
+        <p>The Future Of Garden Beauty</p>
+    </section>
+
+<!-----Java script menue------>
+
+<script>
+   var navLinks = document.getElementById("navLinks");
+
+        function show() {
+            navLinks.style.right = "0px";
+        }
+
+        function hide() {
+           navLinks.style.right = "-200px";
+        }
+
+</script>
+
+
+</body>
+
+</html>

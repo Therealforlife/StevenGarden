@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("image/Karlsruhe_Orangerie_garden_panorama.jpg") ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.link1-information {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.link1-information:hover {
+    border: 1px solid green;
+    background-color: green;
+    transition: 1s;
+}
+/*---------------------- @Media here---------------*/
+
+nav .fa{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background: blue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+
+/* ---------------------Services-----------------*/
+.Services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.services-col:hover {
+    box-shadow: 0 0 20px 0px #f44336;
+
+}
+
+.services-pictures {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.pictures-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.pictures-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.picture1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+}
+
+.picture3 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+}
+
+.picture2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+}
+
+.pictures-col p {
+    padding: 0;
+}
+
+.pictures-col h3 {
+    margin-top: 16%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.call-us {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Image/WhatsApp Image 2021-07-20 at 11.40.03.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.call-us h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*---------------About us page-------------------*/
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("Image/1200px-Strelitzia_reginae4.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.About-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.About-us-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.About-us-col img{
+    width: 100%;
+}
+
+.About-us-col h1 {
+    padding-top: 20px;
+    color: black;
+}
+
+.About-us-col p {
+    padding: 15px 0 25px;
+}
+
+.link-adjust {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: blue;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 20px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #cccccc
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+/* ----------------------Footer -------------------*/
+
+>footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: green;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+
+.footer ul li a {
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+@media (max-width: 1000px) {
+    .nav-links ul li a {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .pictures-col img {
+        margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    }
+
+}
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="with= device-width, initail- scale=1.0">
+    <meta charset="UTF-8">
+    <title>Steven's Garden Services</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/WhatsApp Image 2021-07-27 at 21.37.19.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Services.html">SERVICES</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+<!---------------------------About us------------------------>
+        <section class="About-us">
+        <div class="row">
+            <div class="About-us-col">
+                <h1>We Strive To Do Quality Work</h1>
+                <p>
+                    Hello, every one, I hope you are all well. My name is Steven Mbowane founder
+                    and Owner of Steven Garden Services. I welcome you all and really appreciate to see you here.
+                    This business was started in order to make sure that we manage and keep our customer garden's
+                    beautiful at all time, as the slogan say, we are the future of garden beauty. we wont disappoint our
+                    costumers as this is our aim.
+                </p>
+                <p>
+                    We are a hard working team and we strive to ensure that we meet our customer's requirements, with that said
+                    we actually strive to exceed our customer's requirements. I hope that one day we will be the one managing
+                    and servicing your garden with the sole aim of making it beautiful, take care.
+
+                </p>
+                <a href="Services.html" class="link1-information link-adjust">EXPLORE OUR SERVICES</a>
+            </div>
+            <div class="About-us-col">
+                <img src="Image/213162774_824536608458027_1750172379357244895_n.jpg" title="Steven Mbowane">
+            </div>
+
+        </div>
+   </section>
+<!----------------- Footer---------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> We strive for excellence</p>
+        <div class="icons">
+            <ul>
+                <li><a href="https://www.facebook.com/StevenGardenServices" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+
+            </ul>
+        </div>
+        <p>The Future Of Garden Beauty</p>
+    </section>
+<!-----Java script menue------>
+
+<script>
+   var navLinks = document.getElementById("navLinks");
+
+        function show() {
+            navLinks.style.right = "0px";
+        }
+
+        function hide() {
+           navLinks.style.right = "-200px";
+        }
+
+</script>
+
+</body>
+
+</html>

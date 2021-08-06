@@ -335,6 +335,10 @@ h3 {
     padding: 30px 0;
 }
 
+.contact-us p {
+    display: block;
+    padding: 0 250px;
+}
 
 /* ----------------------Footer -------------------*/
 
@@ -375,7 +379,10 @@ h3 {
     justify-content: space-between;
     height: 400px;
     }
-
+    .contact-us p {
+        display: block;
+        padding: 0 100px;
+    }
 }
 
 
